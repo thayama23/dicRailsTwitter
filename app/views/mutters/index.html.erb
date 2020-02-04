@@ -4,13 +4,11 @@
 
 <table>
   <tr>
-    <th>タイトル</th>
     <th>内容</th>
   </tr>
 
 <% @mutters.each do |mutter| %>
   <tr>
-    <td><%= mutter.title %></td>
     <td><%= mutter.content %></td>
 
     <td><%= link_to '詳細を確認する', mutter_path(mutter.id) %></td>

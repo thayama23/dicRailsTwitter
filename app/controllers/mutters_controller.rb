@@ -58,7 +58,7 @@ class MuttersController < ApplicationController
   private
 
   def mutter_params
-    params.require(:mutter).permit(:title, :content)
+    params.require(:mutter).permit(:content)
   end
 
   def set_mutter
