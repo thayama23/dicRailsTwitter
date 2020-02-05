@@ -8,8 +8,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <div class = "wrapper">
+    <body>
+      <header class ="header">
+        <h1>What's happening!?</h1>
+      </header>
+      <%= yield %>
+      <footer class ="footer">
+        <p>Copyright © 2020 MUTTER INC All RIGHTS RESERVED.</p>
+      </footer>
+    </body>
+  </div>
 
-  <body>
-    <%= yield %>
-  </body>
 </html>

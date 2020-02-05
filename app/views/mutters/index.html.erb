@@ -7,18 +7,17 @@
     <th>内容</th>
   </tr>
 
-<% @mutters.each do |mutter| %>
-  <tr>
-    <td><%= mutter.content %></td>
+  <% @mutters.each do |mutter| %>
+    <tr>
+      <td><%= mutter.content %></td>
 
-    <td><%= link_to '詳細を確認する', mutter_path(mutter.id) %></td>
-    <td><%= link_to "Mutterを編集する", edit_mutter_path(mutter.id), data: { confirm: '本当に編集していいですか？' } %></td>
+      <td><%= link_to '詳細を確認する', mutter_path(mutter.id) %></td>
+      <td><%= link_to "Mutterを編集する", edit_mutter_path(mutter.id), data: { confirm: '本当に編集していいですか？' } %></td>
 
-    <td><%= link_to 'Mutterを削除する', mutter_path(mutter.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
-  </tr>
-<% end %>
+      <td><%= link_to 'Mutterを削除する', mutter_path(mutter.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
+    </tr>
+  <% end %>
 </table>
 
 <br>
-
 <%= link_to '新しくMutterを投稿する', new_mutter_path %>
