@@ -15,6 +15,9 @@
  */
 body {
   height: 100%;
+  text-align: center;
+  background-image: url("desert.jpg");
+  background-position: center;
 }
 
 .header {
