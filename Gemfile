@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 
 #Middleware
 gem 'pg', '>= 0.18', '< 2.0' #SQL related
-gem 'puma', '~> 3.11' #Application server
+gem 'puma', '~> 3.12' #Application server
 
 #View/Front
 gem 'sass-rails', '~> 5.0'  #CSS related
